@@ -38,7 +38,7 @@ a {
   font-family: inherit;
 }
 
-head {
+header {
   height: 100vh;
   color: var(--color-white);
   overflow: hidden;
@@ -62,23 +62,44 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: coral;
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: slateblue;
+
 }
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: aquamarine;
+
 }
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: greenyellow;
 }
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: khaki;
+}
+
+//活性化中のsection
+.active {
+  display: block;
+  animation: scaleAnim 1s ease-in-out;
+  @keyframes scaleAnim {
+    0% {
+      transform: translateY(-100%) scale(0);
+    }
+    100% {
+          transform: translateY(0) scale(1);
+        }
+  }
 }
 
 //controls : サイドボタン
@@ -93,12 +114,21 @@ section {
   justify-content: center;
   transform: translateY(-50%);
 
-  //活性ボタン
+  //活性化中のボタンク
   .active-btn {
     background-color: var(--color-secondary) !important;
     transition: all .4s ease-in-out;
     i {
       color: var(--color-white) !important;
+    }
+    animation: scaleAnim 1s ease-in-out;
+    @keyframes scaleAnim {
+      0% {
+        transform: translateY(-100%) scale(0);
+      }
+      100% {
+            transform: translateY(0) scale(1);
+          }
     }
   }
 
