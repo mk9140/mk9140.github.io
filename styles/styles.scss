@@ -81,7 +81,7 @@ section {
   transform: translateY(0) scale(1);
 }
 
-//controls
+//controls : サイドボタン
 .controls {
   position: fixed;
   z-index: 10;
@@ -92,6 +92,17 @@ section {
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
+
+  //活性ボタン
+  .active-btn {
+    background-color: var(--color-secondary) !important;
+    transition: all .4s ease-in-out;
+    i {
+      color: var(--color-white) !important;
+    }
+  }
+
+  //各サイドボタン
   .control {
     padding: 1rem;
     cursor: pointer;
