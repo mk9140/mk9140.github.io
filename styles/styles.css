@@ -284,4 +284,62 @@ section {
   text-transform: uppercase;
 }
 
+.about-stats {
+  padding-bottom: 4rem;
+}
+.about-stats .progress-bars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.about-stats .progress-bars .progress-bar {
+  display: flex;
+  flex-direction: column;
+}
+.about-stats .progress-bars .progress-bar .progress-title {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.about-stats .progress-bars .progress-bar .progress-content {
+  display: flex;
+  align-items: center;
+}
+.about-stats .progress-bars .progress-bar .progress-content .progress-text {
+  color: var(--color-gray-2);
+}
+.about-stats .progress-bars .progress-bar .progress-content .progress {
+  width: 100%;
+  height: 0.45rem;
+  background-color: var(--color-gray-4);
+  margin-left: 1rem;
+  position: relative;
+}
+.about-stats .progress-bars .progress-bar .progress-content .progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: all 0.4s ease-in-out;
+  background-color: var(--color-secondary);
+  width: 60%;
+}
+.about-stats .progress-bars .progress-bar .progress-content .progress .javascript {
+  width: 90%;
+}
+.about-stats .progress-bars .progress-bar .progress-content .progress .html {
+  width: 80%;
+}
+.about-stats .progress-bars .progress-bar .progress-content .progress .css {
+  width: 70%;
+}
+.about-stats .progress-bars .progress-bar .progress-content .progress .java {
+  width: 60%;
+}
+.about-stats .progress-bars .progress-bar .progress-content .progress .php {
+  width: 50%;
+}
+.about-stats .progress-bars .progress-bar .progress-content .progress .c {
+  width: 40%;
+}
+
 /*# sourceMappingURL=styles.css.map */
