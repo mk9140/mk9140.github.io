@@ -1,0 +1,164 @@
+/*  media queries for responsible  */
+
+@media screen and (max-width: 600px){
+
+  /* 共通 */
+  .section {
+	padding: 2rem 2.5rem !important;
+  }
+  .main-title {
+	h2 {
+	  font-size: 2rem;
+	  span {
+		font-size: 2.3rem;
+	  }
+	  .bg-text {
+		font-size: 2.5rem;
+	  }
+	}
+  }
+
+
+  .timeline {
+	grid-template-columns: 1fr;
+	padding-bottom: 6rem;
+  }
+
+
+  /* portfolio section */
+  .portfolios {
+	grid-template-columns: 1fr;
+	padding-bottom: 6rem;
+  }
+
+}
+
+
+@media screen and (max-width: 1440px){
+  /* 共通 */
+  .section {
+	padding: 7rem 11rem;
+  }
+  /* header sectionの調整 */
+  header {
+	padding: 0 !important;
+  }
+
+  /* about sectionの調整*/
+  .about-container {
+	grid-template-columns: 1fr;
+	.right-about {
+	  padding-top: 2.4rem;
+	  grid-template-columns: 1fr;
+	}
+	.left-about {
+	  padding-right: 0;
+	  p {
+		padding-left: 0;
+
+	  }
+	}
+  }
+}
+
+@media screen and (max-width: 1080px){
+  /* 共通 */
+  .main-title {
+	h2 {
+	  font-size: 4rem;
+	  span {
+		font-size: 4.3rem;
+	  }
+	  .bg-text {
+		font-size: 4.5rem;
+	  }
+	}
+  }
+  /* about sectionの調整*/
+  .about-container {
+	grid-template-columns: 1fr;
+	.right-about {
+	  padding-top: 2.4rem;
+	  grid-template-columns: 1fr;
+	}
+  }
+
+  /* portfolio section */
+  .portfolios {
+	grid-template-columns: 1fr 1fr;
+	padding-bottom: 6rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  /*サイドボタンを下に移動*/
+  .controls {
+	top: auto;
+	bottom: 0;
+	flex-direction: row;
+	justify-content: center;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	background-color: var(--color-gray-5);
+	.control {
+	  margin: .6rem 2rem !important;
+	}
+  }
+
+  /* header sectionの調整 */
+  header {
+	padding: 0;
+  }
+  .header-content {
+	grid-template-columns: 1fr;
+	padding-bottom: 6rem;
+  }
+  header .right-header {
+	padding: 0 !important; // !important -> override everything
+  }
+  .left-header {
+	.h-shape {
+	  display: none;
+	}
+  }
+  .header-content .left-header .image {
+	margin: 0 auto;
+	width: 90%;
+  }
+  .right-header {
+	grid-row: 1;
+	width: 90%;
+	margin: 0 auto;
+	.name {
+	  font-size: 2.4rem !important;
+	}
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* 共通 */
+  .section {
+	padding: 7rem 3rem;
+  }
+  .main-title {
+	h2 {
+	  font-size: 3rem;
+	  span {
+		font-size: 3rem;
+	  }
+	  .bg-text {
+		font-size: 4rem;
+	  }
+	}
+  }
+
+  /* about sectionの調整*/
+  .about-stats {
+	.progress-bars {
+	  grid-template-columns: 1fr;
+	}
+  }
+
+
+}
