@@ -347,19 +347,19 @@ section {
           }
           //各言語のプログレスバー
           .javascript {
-            width: 90%;
+            width: 35%;
           }
           .html {
-            width: 80%;
+            width: 30%;
           }
           .css {
-            width: 70%;
+            width: 30%;
           }
           .java {
-            width: 60%;
+            width: 50%;
           }
           .php {
-            width: 50%;
+            width: 35%;
           }
           .c {
             width: 40%;
@@ -367,6 +367,12 @@ section {
         }
       }
     }
+  }
+  .stat-note {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 0;
+    color: var(--color-gray-2);
   }
 }
 

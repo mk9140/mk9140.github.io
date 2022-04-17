@@ -334,22 +334,28 @@ section {
   width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-content .progress .javascript {
-  width: 90%;
+  width: 35%;
 }
 .about-stats .progress-bars .progress-bar .progress-content .progress .html {
-  width: 80%;
+  width: 30%;
 }
 .about-stats .progress-bars .progress-bar .progress-content .progress .css {
-  width: 70%;
+  width: 30%;
 }
 .about-stats .progress-bars .progress-bar .progress-content .progress .java {
-  width: 60%;
+  width: 50%;
 }
 .about-stats .progress-bars .progress-bar .progress-content .progress .php {
-  width: 50%;
+  width: 35%;
 }
 .about-stats .progress-bars .progress-bar .progress-content .progress .c {
   width: 40%;
+}
+.about-stats .stat-note {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0;
+  color: var(--color-gray-2);
 }
 
 .timeline {
